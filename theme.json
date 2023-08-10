@@ -1,0 +1,237 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "layout": {
+            "contentSize": "1183px",
+            "wideSize": "1183px"
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "themeblock-black",
+                    "color": "#131313",
+                    "name": "Black"
+                },
+                {
+                    "slug": "themeblock-gray",
+                    "color": "#888888",
+                    "name": "Gray"
+                },
+                {
+                    "slug": "themeblock-white",
+                    "color": "#f7f7f7",
+                    "name": "White"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "'Inter', sans-serif",
+                    "slug": "Inter",
+                    "name": "Body - Inter",
+                    "fontFace": [
+                        {
+                            "fontFamily": "'Inter', sans-serif",
+                            "fontWeight": "300",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/inter/Inter-Light.ttf"]
+                        },
+                        {
+                            "fontFamily": "'Inter', sans-serif",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/inter/Inter-Regular.ttf"]
+                        },
+                        {
+                            "fontFamily": "'Inter', sans-serif",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/inter/Inter-Medium.ttf"]
+                        },
+                        {
+                            "fontFamily": "'Inter', sans-serif",
+                            "fontWeight": "600",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/inter/Inter-SemiBold.ttf"]
+                        }
+
+                    ]
+
+                },
+                {
+                    "fontFamily": "'Noto Sans', sans-serif",
+                    "slug": "Noto",
+                    "name": "Heading Font"
+                }
+
+
+            ],
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "size": ".64rem",
+                    "name": "Small"
+                },
+                {
+                    "slug": "medium",
+                    "size": ".8rem",
+                    "name": "Medium"
+                },
+                {
+                    "slug": "regular",
+                    "size": "1rem",
+                    "name": "Regular"
+                }
+            ]
+        },
+        "custom": {
+            "typography":{
+                "fontSize":{
+                    "heading-1": "clamp(2.112rem, 1.935rem + 0.888vw, 3rem)",
+                    "heading-2": "clamp(1.75rem, 1.613rem + 0.688vw, 2.438rem)",
+                    "heading-3": "clamp(1.375rem, 1.25rem + 0.625vw, 2rem)",
+                    "heading-4": "clamp(1.25rem, 1.188rem + 0.313vw, 1.563rem)",
+                    "heading-5": "clamp(1.063rem, 1.025rem + 0.188vw, 1.25rem)",
+                    "heading-6": "clamp(1.063rem, 1.025rem + 0.188vw, 1.25rem)"
+                }
+            },
+            "lineHeight":{
+              "tiny": "1.15",
+              "small": "1.3",
+              "medium": "1.4",
+              "normal": "1.6",
+              "large": "1.7"
+            }
+        },
+        "spacing": {
+            "padding": true,
+            "margin": true,
+            "units": ["px", "em","rem", "vh","vw","%" ]
+        },
+        "border": {
+            "width": true,
+            "color": true,
+            "radius": true,
+            "style": true
+            
+        }
+    
+    },
+    "styles": {
+        "color": {
+            "background":"var(--wp--preset--color--themeblock-white)",
+            "text":"var(--wp--preset--color--themeblock-black)"
+           
+        },
+        
+        "typography": {
+           "fontFamily": "var(--wp--preset--font-family--inter)",
+           "lineHeight": "1.75",
+           "fontSize": "1rem"
+        },
+        "elements": {
+            "link": {
+                "color": {
+                    "text":"var(--wp--preset--color--themeblock-black)"
+                }
+              
+            },
+        
+            "h1": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--noto)",
+                    "fontWeight":"700",
+                    "lineHeight": "var(--wp--custom--line-height--small)",
+                    "fontSize":"var(--wp--custom--typography--font-size--heading-1) !important"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--noto)",
+                    "fontWeight":"700",
+                    "lineHeight": "var(--wp--custom--line-height--small)",
+                    "fontSize":"var(--wp--custom--typography--font-size--heading-2) !important"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--noto)",
+                    "fontWeight":"700",
+                    "lineHeight": "var(--wp--custom--line-height--small)",
+                    "fontSize":"var(--wp--custom--typography--font-size--heading-3) !important"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--noto)",
+                    "fontWeight":"700",
+                    "lineHeight": "var(--wp--custom--line-height--small)",
+                    "fontSize":"var(--wp--custom--typography--font-size--heading-4) !important"
+                }
+            },
+            "h5": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--noto)",
+                    "fontWeight":"700",
+                    "lineHeight": "var(--wp--custom--line-height--small)",
+                    "fontSize":"var(--wp--custom--typography--font-size--heading-5) !important"
+                }
+            },
+            "h6": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--noto)",
+                    "fontWeight":"700",
+                    "lineHeight": "var(--wp--custom--line-height--small)",
+                    "fontSize":"var(--wp--custom--typography--font-size--heading-6) !important"
+                }
+            }
+        
+        },
+        "blocks": {
+            "core/button": {
+                "border": {
+                    "color": "currentColor",
+                    "radius": "0"
+                },
+                "color": {
+                    "background":"var(--wp--preset--color--themeblock-black)",
+                    "text":"var(--wp--preset--color--themeblock-white)"
+                },
+                "spacing": {
+                    "padding": {
+                        "top": ".6em",
+                        "bottom": ".6em",
+                        "left": "1.6em",
+                        "right": "1.6em"
+                    }
+                },
+                "typography": {
+                    "fontSize":"var(--wp--preset--font-size-regular)",
+                    "lineHeight":"var(--wp--custom--line-height--normal)"
+                }
+                
+
+
+                
+            }
+        }
+    },
+    "templateParts": [
+        {
+          "name": "header",
+          "area": "header",
+          "title": "Header"
+        },
+        {
+            "name": "footer",
+            "area": "footer",
+            "title": "Footer"
+          }
+    ]
+}
